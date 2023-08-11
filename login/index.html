@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MockTest Login Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500;600&family=Roboto+Slab:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SemanticUI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css"
+    />
+
+    <link href="../static/css/login.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 class="ui header">DiceTutors Tutors Aptitude Test</h1>
+
+    <div class="ui grid stackable container">
+      <!-- Form -->
+      <div class="five wide column">
+        <form
+          id="loginForm"
+          name="loginForm"
+          method="POST"
+          action="../test/index.php"
+          target="_blank"
+          class="ui form"
+        >
+          <!-- Name input -->
+          <div class="required field">
+            <label>Name</label>
+            <input type="text" name="name" autofocus />
+          </div>
+
+          <!-- Register Number input -->
+          <div class="required field">
+            <label>Registeration Number</label>
+            <input type="text" name="regIn" />
+          </div>
+
+          <!-- Department input -->
+         <!--  <div class="required field">
+            <label>Department</label>
+            <select name="dept" class="ui fluid selection dropdown">
+              <option value="" selected disabled></option>
+              <option value="AUT">Automobile Engineering</option>
+              <option value="BIO">Biotechnology</option>
+              <option value="CHE">Chemical Engineering</option>
+              <option value="CIV">Civil Engineering</option>
+              <option value="CSE">Computer Science and Engineering</option>
+              <option value="EEE">
+                Electrical and Electronics Engineering
+              </option>
+              <option value="ECE">
+                Electronics and Communications Engineering
+              </option>
+              <option value="INT">Information Technology</option>
+              <option value="MEC">Mechanical Engineering</option>
+            </select>
+          </div> -->
+
+          <!-- E-Mail ID input -->
+          <div class="required field">
+            <label>E-Mail ID</label>
+            <input type="email" name="email" />
+            <small>Please use your SVCE affiliated E-Mail ID only.</small>
+          </div>
+
+          <!-- Start Button -->
+          <button type="submit" class="ui fluid large blue disabled button">
+            BEGIN TEST
+          </button>
+        </form>
+      </div>
+
+      <!-- Instructions -->
+      <div class="ten wide column">
+        <h3>Instructions:-</h3>
+        <ol class>
+          <li>The duration of the test is <b>1 hour</b>.</li>
+
+          <li>
+            We strongly suggest that you keep a <b>pen and paper</b> along with
+            yourself <b>before beginning the test</b>.
+          </li>
+
+          <li>
+            There are <b>50 questions</b> on the test, each consiting of
+            <b>4 options</b>, out of which <b>only one is correct</b>.
+            <ul>
+              <li>
+                Questions <b>1-10</b> will test your
+                <b>quantitative ability.</b>
+              </li>
+              <li>
+                Questions <b>11-20</b> will test your <b>verbal reasoning.</b>
+              </li>
+              <li>
+                Questions <b>21-30</b> will test your
+                <b>programming skills.</b>
+              </li>
+              <li>
+                Questions <b>31-50</b> will test your <b>core knowledge.</b>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>1 point</b> is granted for every correct answer. There is
+            <b>no negative marking</b> for wrong answers.
+          </li>
+
+          <li>
+            Enter all your details correctly, <b>no second attempts</b> will be
+            provided at any cost.
+          </li>
+
+          <li>
+            Once you have attempted all the questions, click on the submit
+            button.
+          </li>
+
+          <li>
+            Make sure you have a <b>stable internet connection</b> since your
+            answers will be lost on reloading or logging out of the software.
+          </li>
+
+          <li>
+            Please write to us at
+            <a href="mailto:forese@svce.ac.in">forese@svce.ac.in</a> for any
+            grievances.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      Copyright &copy; 2022 - <b>FOR</b>um for <b>E</b>conomic <b>S</b>tudies by
+      <b>E</b>ngineers - Designed and Developed by
+      <b>FORESE Tech</b>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- SemanticUI  JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../static/js/login.js"></script>
+  </body>
+</html>
